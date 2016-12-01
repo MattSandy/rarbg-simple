@@ -1,10 +1,8 @@
 var express = require('express');
 var router = express.Router();
 
-let http = require('http');
-let https = require('https');
-let cheerio = require('cheerio')
-let zlib = require('zlib');
+var cheerio = require('cheerio')
+var zlib = require('zlib');
 var request = require("request");
 
 /* GET torrents. */
