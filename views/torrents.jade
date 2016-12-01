@@ -1,0 +1,13 @@
+extends layout
+
+block content
+    ul.list-group
+        each torrent in list
+            li.list-group-item
+                span
+                    a(href="#{torrent.href}") #{torrent.title}
+                span.text-success.seeders #{torrent.seeders}
+                span #{torrent.info}
+
+block title
+    h1.text-center #{title}

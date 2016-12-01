@@ -1,0 +1,58 @@
+doctype html
+html
+  head
+    meta(charset="utf-8")
+
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+
+    title torrents
+
+    link(rel="stylesheet", href="/assets/bootstrap/css/bootstrap.min.css")
+
+    link(rel="stylesheet", href="https://fonts.googleapis.com/css?family=Bitter:400,700")
+
+    link(rel="stylesheet", href="/assets/fonts/ionicons.min.css")
+
+    link(rel="stylesheet", href="/assets/css/Footer-Basic.css")
+
+    link(rel="stylesheet", href="/assets/css/Header-Dark.css")
+
+    link(rel="stylesheet", href="/assets/css/Pretty-Search-Form.css")
+
+    link(rel="stylesheet", href="/assets/css/styles.css")
+  body
+    div
+      .header-dark
+        .container.hero
+          .row
+            .col-md-8.col-md-offset-2
+              block title
+
+              form.search-form
+                .input-group
+                  .input-group-addon
+                    span
+                      i.glyphicon.glyphicon-search
+
+                  input#search.form-control(type="text", name="search", placeholder="I am looking for..")
+
+
+              input(type="hidden", name="quality", value="720p")
+              block content
+
+.footer-basic
+      footer
+        .social
+          a(href="https://github.com/mattsandy")
+            i.icon.ion-social-github
+          a(href="http://twitter.com/appupio")
+            i.icon.ion-social-twitter
+
+        p.copyright
+          a(href="http://appup.io") AppUp.io
+
+    script(src="/assets/js/jquery.min.js")
+
+    script(src="/assets/bootstrap/js/bootstrap.min.js")
+
+    script(src="/assets/js/init.js")
